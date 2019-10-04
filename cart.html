@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Online Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Iceland|Saira+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="getFromLocalStorage()">
+    <header id="header">
+        <div class="header-home" onclick="window.location.href='index.html'">
+            <h1>Online
+                <span class="shop">Shop</span>
+            </h1>
+        </div>
+    </header>
+    <div id="main-wrapper">
+        <div id="cart-wrapper">
+            <div class="col-left-cart">
+                <table class="cart-table">
+
+                    <h1>Shopping Cart</h1>
+                    <thead>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Sub Total</th>
+                        <th></th>
+                    </thead>
+                    <tbody id="cart-table-body">
+                        <!-- generated content here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-right-cart">
+                <!-- generated content here -->
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Are you sure?</h2>
+            <div class="modal-buttons">
+                <button id="btn-yes">Yes</button>
+                <button id="btn-no">No</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018:
+            <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+
+    <script src="js/easyHTTP.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

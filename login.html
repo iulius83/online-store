@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Online Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Iceland|Saira+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="getMenu()">
+    <header>
+        <div class="header-home" onclick="window.location.href='index.html'">
+            <h1>Online <span class="shop">Shop</span></h1>
+        </div>
+    </header>
+    <div id="main-wrapper">
+        <div id="login-wrapper">
+            <form id="login-form">
+                <label for="user-name">Please enter your username:  <span class="error error-user">*required!</span></label>
+                
+                <input type="text" id="user-name" name="user-name" placeholder="username..." autofocus>
+    
+                <label for="password">Please enter your password:  <span class="error error-pass">*required!</span></label>
+                <input type="password" id="password" name="password" placeholder="password...">
+    
+                <label class="error error-incorrect">User name and/or password incorrect!</label>
+                <input type="submit" id="login" class="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018:
+            <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+
+    <script src="js/easyHTTP.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

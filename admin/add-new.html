@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin - Online Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Iceland|Saira+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-home" onclick="window.location.href='admin.html'">
+            <h1>Online
+                <span class="shop">Shop</span> Admin</h1>
+        </div>
+        <div class="buttons">
+            <button id="login" onclick="window.location.href='../index.html'">
+                <i class="fas fa-lock-open fa-xs"></i>&nbsp; Logout</button>
+        </div>
+    </header>
+    <div id="main-wrapper">
+        <div id="new-wrapper">
+            <form id="create-new">
+                <div class="col-wrapper">
+                    <div class="left">
+                        <label for="product-name">Product name:
+                            <span class="error error-name">required!</span>
+                        </label>
+                        <label for="product-URL-image">Photo URL:
+                            <span class="error error-url">required!</span>
+                        </label>
+                        <label for="prduct-price">Price:
+                            <span class="error error-price">required!</span>
+                        </label>
+
+                        <label for="product-description">Description:
+                            <span class="error error-description">required!</span>
+                        </label>
+                        <label for="product-stock">Stock:
+                            <span class="error error-stock">required!</span>
+                        </label>
+                    </div>
+                    <div class="right">
+                        <input type="text" id="product-name" name="product-name" placeholder="add name...">
+
+                        <input type="text" id="product-URL-image" name="product-URL-image" placeholder="add URL...">
+
+                        <input type="number" id="product-price" name="product-price" placeholder="add the price...">
+
+                        <textarea type="text" id="product-description" name="product-description" placeholder="add a short description..."></textarea>
+
+                        <input type="number" id="product-stock" name="product-stock" value="1">
+                    </div>
+                </div>
+                <input type="submit" id="add-new" class="submit" value="Add Item">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018:
+            <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+
+    <script src="../js/easyHTTP.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>
